@@ -1,20 +1,38 @@
 {
-"proxy":"https://localhost:5000",
-
-  "name": "nontech-job-platform",
+  "name": "client",
   "version": "1.0.0",
-  "description": "React frontend + Express backend",
+  "proxy": "http://localhost:5000",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && nodemon server.js",
-    "client": "cd client && npm start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "concurrently": "^8.0.1"
+    "concurrently": "^8.0.1",
+    "tailwindcss": "^4.1.5"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bootstrap": "^5.3.6",
+    "http-proxy-middleware": "^3.0.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.3",
+    "react-scripts": "^5.0.1",
+    "vite": "^6.3.5",
+    "web-vitals": "^4.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
-
-
-
-
 }
-
